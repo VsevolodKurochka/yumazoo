@@ -1,0 +1,54 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 8px;
+  border-radius: var(--border-radius);
+  transition: all ease 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--neutral-80);
+  }
+
+  &-selected {
+    background: var(--neutral-80);
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &-image {
+    width: 24px;
+    height: 15px;
+    background-color: var(--neutral-80);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-difficulty {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    &-1 svg {
+      fill: var(--easy);
+    }
+
+    &-2 svg {
+      fill: var(--medium);
+    }
+
+    &-3 svg {
+      fill: var(--hard);
+    }
+  }
+}

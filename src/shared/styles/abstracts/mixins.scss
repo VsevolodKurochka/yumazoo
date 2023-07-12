@@ -1,0 +1,48 @@
+@mixin placeholder {
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+@mixin btn-effect-bounce($background) {
+  &:before {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleY(0);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    background: $background;
+  }
+}
+
+@mixin btn-effect-bounce-top($background, $hover) {
+  @include btn-effect-bounce($background);
+
+  &:before {
+    transform-origin: 50% 100%;
+  }
+
+  &:not([disabled]):hover {
+    color: $hover;
+  }
+
+  &:hover:before {
+    transform: none;
+  }
+}
+
+@mixin truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

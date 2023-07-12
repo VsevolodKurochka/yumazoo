@@ -1,7 +1,7 @@
 {
   "name": "yumazoo",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,10 +11,15 @@
   },
   "dependencies": {
     "@headlessui/react": "1.7.15",
+    "@heroicons/react": "^2.0.18",
+    "axios": "^1.4.0",
     "classnames": "2.3.2",
+    "immer": "^10.0.2",
     "prop-types": "15.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hot-toast": "2.4.1",
+    "react-router-dom": "6.14.1",
     "react-virtuoso": "4.3.11",
     "sass": "1.63.6",
     "zustand": "4.3.9"

@@ -1,0 +1,59 @@
+.recipe {
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    img {
+      width: 24px;
+    }
+  }
+
+  &-name {
+    font-weight: bold;
+  }
+
+  &-difficulty {
+    padding: 10px;
+    border-radius: var(--border-radius);
+    background: var(--background-light);
+    margin-bottom: 24px;
+
+    &-title {
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    &-inner {
+      padding: 10px 20px;
+      border-radius: var(--border-radius);
+      background: var(--teal-60);
+      color: var(--neutral-100);
+
+      &-3 {
+        background: var(--teal-80);
+        color: var(--white);
+      }
+    }
+  }
+
+  &-body {
+    display: grid;
+    padding: 13px 24px;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    border-radius: var(--border-radius);
+    background: var(--background-light);
+  }
+}

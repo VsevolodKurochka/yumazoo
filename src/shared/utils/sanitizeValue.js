@@ -1,0 +1,1 @@
+export const sanitizeValue = (value) => value.toLowerCase().replace(/\s+/g, '');
